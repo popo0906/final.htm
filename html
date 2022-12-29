@@ -1,0 +1,292 @@
+<html>
+    <head><title>推薦的咖啡廳</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>   
+     
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+
+    </script>
+    <style>
+   body
+{
+  background-image:url(https://pic.pimg.tw/airbubu/1490857590-1042803537_wn.jpg);
+  background-size:cover;
+  background-attachment:center;
+    background-position:fixed;
+}
+        *{
+            margin:0;
+            color:#917B56;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color:#f7cad1;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:#E3E2B4;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color:#E3E2B4; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color:white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #E3E2B4; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color::#917B56 ;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #EDE1E3;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: #BFC8D7;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color:#A2B59F;
+        }
+        /* banner*/
+        /*.banner{
+            background-image: linear-gradient(#EEB8B8,#D1DFB8);
+            padding:5px;
+        }
+        .banner h1{
+            padding: 20px;
+        }     */   
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            /*background-color:white;*/
+            /*padding:40px;*/
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: #C9BA9B;
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: #f7cad1;
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: #C9BA9B;
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: #BFC8D7;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: #f7cad1;
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://thumbs.dreamstime.com/z/%E7%BA%A2%E8%8C%B6%E6%BC%82%E4%BA%AE%E7%93%B7%E8%8C%B6%E6%9D%AF-%E6%9C%A8%E6%A1%8C%E7%93%B7%E8%8C%B6%E6%9D%AF%E4%B8%AD%E7%9A%84%E9%BB%91%E8%8C%B6-181045470.jpg">
+                  推薦的咖啡廳٩(✿∂‿∂✿)۶
+                </div>
+                <div class="top-nav">
+                  <a href=>美味推薦</a>
+                 
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                
+                <li  class="dropdown"><a href="#faculty">咖啡廳介紹</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">孵咖啡</a>
+                        <a href="#faculty">看電車咖啡廳</a>
+                        <a href="#faculty">六町目cafe</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">地址</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://immay.tw/wp-content/uploads/pixnet/1588644742-3420435365.jpg" /></li>
+                    <li><img src="http://2.bp.blogspot.com/-doHKSokzf8s/UH6z5KaXVGI/AAAAAAAABOg/iuuY2Poal88/s1600/PA107074.jpg" /></li>
+                    <li><img src="https://4.bp.blogspot.com/-l2McVPddi-I/WvgQnMNx8fI/AAAAAAAAel4/arvyLkTXTyQWTqqOA6qOQguLykSMAs61wCEwYBhgL/s1600/P4280696%2B%25287%2529.JPG" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>推薦店家介紹</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://lexie.tw/wp-content/uploads/20201011234216_95.jpg" />
+                    <h3>孵咖啡</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://hiromishi.com/wp-content/uploads/2014-04-24-041405-4.jpg" />
+                    <h3>看電車咖啡廳</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://globalfoodelicious.com/wp-content/uploads/20220127174159_34.jpeg" />
+                    <h3>六町目cafe</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>最後是地址呦~(•͈⌔•͈⑅)</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>孵咖啡</b>
+                        <span>地址︰台北市大同區歸綏街218-1號</span>
+                            <span>  營業時間︰11:00～18:00</span>
+                            
+                        <b>看電車咖啡廳</b>
+                        <span>地址︰台北市士林區文林路302號</span>
+                        <span>營業時間:周五11:30-22:00 周一-四11:30-21:30"</span>
+                       <span>         周日10:30-21:00 周六10:30-22:00 </span>
+                        
+                        <b>六町目cafe</b>
+                        <span>地址:台北市松山區新中街105號</span>
+                    </div>
+                    <div class="right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14456.224989270859!2d121.49614213077233!3d25.06608264331565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2stw!4v1671542459721!5m2!1sja!2stw" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 . 維護者 Popo
+        </div>
+     </body>
+</html>
